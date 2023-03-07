@@ -1,0 +1,65 @@
+mat-card {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.mobile-form {
+    max-width: 500px;
+    margin: 0 auto;
+    
+  }
+  
+  h1 {
+    font: 500 20px / 32px Roboto, "Helvetica Neue", sans-serif
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+  margin-bottom: 0.5rem;
+  color: fff;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: #e0e0e0;
+    box-sizing: border-box; 
+    box-shadow: 3px 2px 4px rgba(0,0,0,0.1); 
+  }
+  
+  
+  
+  
+  
+
+  // input:hover {
+  //   background-color: #cfe2ff; 
+  // }
+  
+  button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
+    background-color: #03c987;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-form {
+      max-width: 80%;
+    }
+  }
+  
+

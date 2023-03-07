@@ -1,0 +1,35 @@
+<!--<div class="title">
+  <h2 class="h2title">Convertir dinero</h2>
+</div>-->
+  <form [formGroup]="form" (submit)="onSubmit()" class="container">
+    <div *ngIf="botonDeCAMBIO" class="divsInputs">
+      <p class="pInput">Cambiar de Pesos a Dolares</p>
+      <div class="divsINputyBoton">
+        <div>
+          <input type="number" formControlName="pesoDolar" class="inputs" />
+        </div>
+        <button mat-raised-button color="link" class="btn2" (click)="ClickDeCAMBIO()">ARS$</button>
+      </div>
+    </div>
+
+    <div *ngIf="!botonDeCAMBIO" class="divsInputs">
+      <p class="pInput">Cambiar de Dolares a Pesos</p>
+      <div class="divsINputyBoton">
+        <div>
+          <input type="number" formControlName="dolarPeso" class="inputs" />
+        </div>
+        <button mat-raised-button color="accent" class="btn2" (click)="ClickDeCAMBIO()">USD$</button>
+      </div>
+    </div>
+
+    <button
+      (submit)="onSubmit()"
+      [disabled]="form.invalid"
+      class="login-btn"
+      mat-raised-button
+      color="accent">
+      Convertir
+    </button>
+  </form>
+<h2 *ngIf="botonDeCAMBIO">${{ this.valoresFormulario1 }} Pesos =<span>$USD{{ valor1| number: '1.1-2'}}</span> </h2>
+<h2 *ngIf="!botonDeCAMBIO">${{ this.valoresFormulario2 }} USD = ${{ valor2| number: '1.1-2'}}</h2>

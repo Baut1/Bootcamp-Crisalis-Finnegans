@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HttpService } from './http.service';
+import { DialogGenericService } from './dialog-generic.service';
 
-describe('HttpService', () => {
-  let service: HttpService;
+describe('DialogGenericService', () => {
+  let service: DialogGenericService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(HttpService);
+    service = TestBed.inject(DialogGenericService);
   });
 
   it('should be created', () => {
